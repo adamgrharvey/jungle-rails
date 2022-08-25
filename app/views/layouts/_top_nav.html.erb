@@ -3,7 +3,7 @@
   <section class="title">
     <h3>Welcome to</h3>
     <h1>The Jungle</h1>
-    <h2>Where you can find any plants!</h2>
+    <h2>Where you can find any plant!</h2>
   </section>
 </header>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-nav">
@@ -39,6 +39,9 @@
               <%= link_to category.name, category, class: "nav-link" %>
             </li>
             <% end %>
+            <li class="nav-item">
+              <%= link_to 'About Us', "/about", class: "nav-link" %>
+            </li>
           <%# </ul>
         </li> %>
       </ul>
