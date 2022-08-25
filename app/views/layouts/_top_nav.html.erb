@@ -41,11 +41,37 @@
             <% end %>
             <li class="nav-item">
               <%= link_to 'About Us', "/about", class: "nav-link" %>
-            </li>
+            </li>         
           <%# </ul>
         </li> %>
       </ul>
+      
+
+      
+      
       <ul class="navbar-nav">
+      <% if logged_in? %>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-danger"
+            href="#"
+            id="navbarDropdownAdmin"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <%= current_user.email %>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><%= link_to 'Logout', [:logout], class: "nav-link" %></li>
+          </ul>
+        </li>
+        <% else %>
+        <li class="nav-item end-0">
+          <%= link_to 'login', class: "nav-link " do %>
+          Login <% end %>
+        </li>        
+        <% end %>      
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
