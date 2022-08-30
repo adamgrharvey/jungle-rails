@@ -6,7 +6,7 @@ return unless Rails.env.test?
 CypressRails.hooks.before_server_start do
   # Called once, before either the transaction or the server is started
   cat1 = Category.find_or_create_by! name: 'Evergreens'
-
+  User.create!({first_name: 'adam', last_name: 'harvey', email: 'adam@ha.com', password: 'testing', password_confirmation: 'testing'})
   cat1.products.create!({
     name:  'Giant Tea',
     description: "The Giant Tea is an uncommon, medium-sized plant and can be found only in some tundras. It blooms twice a year, for 3 weeks.",
@@ -23,6 +23,8 @@ CypressRails.hooks.before_server_start do
     quantity: 18,
     price: 24.99
   })
+
+
 end
 
 CypressRails.hooks.after_transaction_start do
