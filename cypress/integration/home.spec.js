@@ -1,5 +1,3 @@
-
-
 describe('Jungle testing', () => {
   beforeEach(() => {
     cy.visit('/')
