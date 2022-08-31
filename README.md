@@ -2,6 +2,8 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+Contains everything needed to customize the site to any product and category types.
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -29,3 +31,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Screenshots
+
+![Product Display](https://github.com/adamgrharvey/jungle-rails/blob/master/IMAGES/Product%20display.png)
+![Admin Dashboard](https://github.com/adamgrharvey/jungle-rails/blob/master/IMAGES/admin%20dashboard.png)
+![Product Creation](https://github.com/adamgrharvey/jungle-rails/blob/master/IMAGES/new%20product.png)
+![Order Creation](https://github.com/adamgrharvey/jungle-rails/blob/master/IMAGES/order%20ceation.png)
